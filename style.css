@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b1320;
+}
+
+.input-field {
+    position: relative;
+    width: 500px;
+    line-height: 40px;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #acb3b8;
+    transition: 0.25s all ease-in-out;
+    cursor: text;
+    text-transform: capitalize;
+    font-size: 2em;
+    user-select: none;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 0.7em 0;
+    border-bottom: 3px solid #acb3b8;
+    box-shadow: none;
+    color: #e4cf62;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+input:focus,
+input:valid {
+    border-color: #e4cf62;
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 0.9em;
+    top: -24px;
+    color: #e4cf62;
+}
